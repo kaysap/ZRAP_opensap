@@ -6,6 +6,7 @@
 
    composition [0..*] of ZI_RAP_Booking_987 as _Booking 
    
+  // association [0..1] to /DMO/I_Agency       as _Agency   on $projection.AgencyID = _Agency.AgencyID
    association [0..1] to /DMO/I_Agency       as _Agency   on $projection.AgencyID = _Agency.AgencyID
    association [0..1] to /DMO/I_Customer     as _Customer on $projection.CustomerID = _Customer.CustomerID
    association [0..1] to I_Currency          as _Currency on $projection.CurrencyCode = _Currency.Currency  
